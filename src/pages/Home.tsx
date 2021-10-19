@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
-        <IonInput type="text" placeholder="Pseudo"></IonInput>
+        <IonInput type="text" placeholder="Pseudo" required></IonInput>
         <IonButton>Entrer dans le jeu</IonButton>
       </IonContent>
     </IonPage>
