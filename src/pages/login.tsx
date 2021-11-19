@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonButton, IonLabel, IonItem, IonCheckbox } from '@ionic/react';
 import '../css/style.css';
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
     <IonPage>
       <form className="ion-padding">
@@ -17,4 +17,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Login;
