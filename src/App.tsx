@@ -23,7 +23,7 @@ import Awaiting from './pages/awaiting';
 import Dashboard from './pages/dashboard';
 import Game from './pages/game';
 
-const App: React.FC = () => (
+const App: React.FC = () => ( 
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
@@ -31,7 +31,6 @@ const App: React.FC = () => (
         <Route exact path="/awating" component={Awaiting}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
         <Route exact path="/game" component={Game}></Route>
-        
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
