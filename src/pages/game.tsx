@@ -9,4 +9,20 @@ const Game: React.FC = () => {
     );
 };
 
+const Info: React.FC = () => {
+    return (
+        <IonPage>
+            <IonTitle>Information</IonTitle>
+        </IonPage>
+    );
+};
+
+const Rules: React.FC = () => {
+    return (
+        <IonPage>
+            <IonTitle>Rules</IonTitle>
+        </IonPage>
+    );
+};
+
 export default Game;
