@@ -1,7 +1,6 @@
-import React from 'react';
 import { IonPage, IonTitle, IonLabel, IonTabs, IonTabBar, IonTabButton, IonTab, IonIcon, IonRouterOutlet } from '@ionic/react';
 import { Route, Redirect } from 'react-router-dom';
-import { personCircle, map, informationCircle } from 'ionicons/icons';
+import { construct, informationCircle, gameController } from 'ionicons/icons';
 import '../css/style.css';
 
 const Game: React.FC = () => {
@@ -25,24 +24,26 @@ const Game: React.FC = () => {
 
 			{/* Navigation tab (bottom of screen) */}
 			<IonTabs>
+				
 				<IonRouterOutlet>
 					<Route path="/"></Route>
 				</IonRouterOutlet>
+
 				<IonTabBar slot="bottom">
 
-					<IonTabButton tab="Me">
-						<IonIcon icon={personCircle} />
-						<IonLabel>Me</IonLabel>
+					<IonTabButton tab="my-resources">
+						<IonIcon icon={construct} />
+						<IonLabel>My resources</IonLabel>
 					</IonTabButton>
 
-					<IonTabButton tab="Board">
-						<IonIcon icon={map} />
+					<IonTabButton tab="board">
+						<IonIcon icon={gameController} />
 						<IonLabel>Board</IonLabel>
 					</IonTabButton>
 
-					<IonTabButton tab="Rules">
+					<IonTabButton tab="rules-informations">
 						<IonIcon icon={informationCircle} />
-						<IonLabel>Rules</IonLabel>
+						<IonLabel>Rules / Informations</IonLabel>
 					</IonTabButton>
 				</IonTabBar>
 			</IonTabs>
