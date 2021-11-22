@@ -19,12 +19,12 @@ const Login: React.FC = () => {
             <IonLabel position="floating">Username</IonLabel>
             <IonInput /> {/* For enter your pseudo */}
           </IonItem>
-          <IonButton className="ion-margin-top" type="submit" expand="block">
+          <IonButton className="ion-margin-top" type="submit" expand="block" >
             Login
           </IonButton>
         </form>
       </IonContent>
-
+      
     </IonPage>
   );
 };
