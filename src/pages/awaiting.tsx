@@ -4,22 +4,42 @@ import '../css/style.css';
 
 const Awaiting: React.FC = () => {
     return (
-        <IonPage>
+        <IonPage className="awaiting">
+            <div className="awaiting-content">
+                {/* Content of numbers of player who join the party */}
+                <IonLabel className="awaiting-title">
+                    <h1>4/6</h1>
+                </IonLabel>
 
-            {/* Content of numbers of player who join the party */}
-            <IonToolbar slot="top">
-                <IonTitle className="ion-text-center flex">4/6</IonTitle>
-            </IonToolbar>
+                <div className="awaiting-pseudos">
+                    {/* Content of name of the player */}
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
 
-            {/* Content of name of the player */}
-            <IonLabel>
-                <h3>Pseudo</h3>
-            </IonLabel>
+                </div>
 
-            <IonLabel>
-                <IonIcon icon={reloadOutline} />
-                <h3>Waiting for the others</h3>
-            </IonLabel>
+                {/* content of waiting animation */}
+                <IonLabel className="awaiting-icon">
+                    <IonIcon className="awaiting-icon-content" size="large" icon={reloadOutline} />
+                    <h2>Waiting for the others...</h2>
+                </IonLabel>
+            </div>
 
         </IonPage>
     );
