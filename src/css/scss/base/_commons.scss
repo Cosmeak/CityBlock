@@ -5,12 +5,57 @@
 
 .margin-center-horizontal {
     margin: 0 auto;
+    
 }
 
-.bg-img {
-    background-image: url(assets/img/bg-triangle.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
+.border5px{
+    border-radius: 5px;
 }
+
+.h-w-300{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 50% 50%;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.h-w{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+} 
+
+.absolute{
+    position: relative;
+    z-index: 5;
+}
+
+
+.pseudo{
+    z-index: 1;
+    background-color: rgba(247, 247, 247, 0.438);
+    border: solid black 1px;
+    width: 80%;
+    margin-top: 40px;
+
+}
+
+.button{
+    z-index: 1;
+    width: 50%;
+    border: solid black 1px;
+    background-color: rgba(47, 235, 0, 0.712);
+    margin-top: 20px;
+    color: black;
+}
+
+.admin{
+    margin-top: 50%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+
