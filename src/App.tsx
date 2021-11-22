@@ -28,7 +28,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/" component={Login}></Route>
-        <Route exact path="/awating" component={Awaiting}></Route>
+        <Route exact path="/awaiting" component={Awaiting}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
         <Route exact path="/game" component={Game}></Route>
       </IonRouterOutlet>
