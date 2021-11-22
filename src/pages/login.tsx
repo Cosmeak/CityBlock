@@ -31,14 +31,14 @@ const Login: React.FC = () => {
           </IonThumbnail>
       ))}
         <form className="ion-padding absolute border5px ">
-          <IonItem className='pseudo margin-center-horizontal border5px'>
-            <IonLabel position='fixed' >Pseudo</IonLabel>
-            <IonInput></IonInput> {/* For enter your pseudo */}
+          <IonItem className='pseudo margin-center-horizontal border5px shadow-gray'>
+            {/* <IonLabel >Pseudo :</IonLabel> */}
+            <IonInput placeholder='Pseudo'></IonInput>{/* For enter your pseudo */}
           </IonItem>
-          <IonButton className="margin-center-horizontal button border5px" fill='clear' type="submit" expand="block" >
+          <IonButton className="margin-center-horizontal pissenlit border5px shadow-gray" fill='clear' type="submit" expand="block" >
             Entrer dans le jeu
           </IonButton>
-          <IonButton className="admin margin-center-horizontal " fill='clear' type="submit" expand="block" >
+          <IonButton className="admin margin-center-horizontal border5px shadow-gray " fill='clear' type="submit" expand="block" >
             Administrateur ?
           </IonButton>
         </form>

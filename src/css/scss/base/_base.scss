@@ -6,3 +6,9 @@ main, body, IonContent, IonPage{
     background-color: transparent;
     background:none;
 }
+
+body{
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;   
+}
