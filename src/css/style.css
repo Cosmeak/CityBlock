@@ -58,4 +58,9 @@ table {
   font-family: "Roboto", sans-serif;
 }
 
+.flex {
+  display: flex;
+  background-color: coral;
+}
+
 /*# sourceMappingURL=style.css.map */

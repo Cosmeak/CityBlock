@@ -1,10 +1,26 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonButton, IonLabel, IonItem, IonCheckbox } from '@ionic/react';
+import { IonPage, IonTitle, IonLabel, IonTabs, IonTabBar, IonTabButton, IonTab, IonIcon, IonRouterOutlet, IonToolbar } from '@ionic/react';
+import { reloadOutline } from 'ionicons/icons';
 import '../css/style.css';
 
 const Awaiting: React.FC = () => {
     return (
         <IonPage>
-            <IonTitle>Awaiting</IonTitle>
+
+            {/* Content of numbers of player who join the party */}
+            <IonToolbar slot="top">
+                <IonTitle className="ion-text-center flex">4/6</IonTitle>
+            </IonToolbar>
+
+            {/* Content of name of the player */}
+            <IonLabel>
+                <h3>Pseudo</h3>
+            </IonLabel>
+
+            <IonLabel>
+                <IonIcon icon={reloadOutline} />
+                <h3>Waiting for the others</h3>
+            </IonLabel>
+
         </IonPage>
     );
 };
