@@ -63,4 +63,8 @@ table {
   background-color: coral;
 }
 
+.margin-center-horizontal {
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */

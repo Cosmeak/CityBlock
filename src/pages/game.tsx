@@ -1,4 +1,4 @@
-import { IonPage, IonTitle, IonLabel, IonTabs, IonTabBar, IonTabButton, IonTab, IonIcon, IonRouterOutlet } from '@ionic/react';
+import { IonPage, IonTitle, IonLabel, IonTabs, IonTabBar, IonTabButton, IonTab, IonIcon, IonRouterOutlet, IonContent } from '@ionic/react';
 import { Route, Redirect } from 'react-router-dom';
 import { construct, informationCircle, gameController } from 'ionicons/icons';
 import '../css/style.css';
@@ -9,7 +9,9 @@ const Game: React.FC = () => {
 
 			{/* Content of tab info */}
 			<IonTab tab="info">
-				<h1>Info</h1>
+				<IonContent fullscreen>
+					<h1 color="white">Info</h1>
+				</IonContent>
 			</IonTab>
 
 			{/* Content of tab board (main vue) */}
@@ -24,7 +26,7 @@ const Game: React.FC = () => {
 
 			{/* Navigation tab (bottom of screen) */}
 			<IonTabs>
-				
+
 				<IonRouterOutlet>
 					<Route path="/"></Route>
 				</IonRouterOutlet>
