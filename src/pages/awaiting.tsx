@@ -11,10 +11,28 @@ const Awaiting: React.FC = () => {
                     <h1>4/6</h1>
                 </IonLabel>
 
-                {/* Content of name of the player */}
-                <IonLabel className="awaiting-pseudo">
-                    <p>Pseudo</p>
-                </IonLabel>
+                <div className="awaiting-pseudos">
+                    {/* Content of name of the player */}
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+                    <IonLabel className="awaiting-pseudo">
+                        <p>Pseudo</p>
+                    </IonLabel>
+
+                </div>
 
                 {/* content of waiting animation */}
                 <IonLabel className="awaiting-icon">

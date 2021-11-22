@@ -134,6 +134,14 @@ main, body, IonContent, IonPage {
   border-radius: 38px 38px 47px 47px;
 }
 
+.awaiting-pseudos {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .awaiting-pseudo {
   display: flex !important;
   justify-content: center;
