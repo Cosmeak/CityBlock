@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { construct, informationCircle, gameController } from 'ionicons/icons';
 import '../css/style.css';
 
-const Game: React.FC = () => {
+const TabsRoot: React.FC = () => {
 	return (
 		<IonPage>
 
@@ -16,7 +16,7 @@ const Game: React.FC = () => {
 
 			{/* Content of tab board (main vue) */}
 			<IonTab tab="board">
-
+			
 			</IonTab>
 
 			{/* Page of all game rules */}
@@ -54,4 +54,4 @@ const Game: React.FC = () => {
 	);
 };
 
-export default Game;
+export default TabsRoot;

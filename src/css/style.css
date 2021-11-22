@@ -60,19 +60,10 @@ table {
 
 .flex {
   display: flex;
-  background-color: coral;
 }
 
 .margin-center-horizontal {
   margin: 0 auto;
-}
-
-.bg-img {
-  background-image: url(assets/img/bg-triangle.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

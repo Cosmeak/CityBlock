@@ -1,16 +1,11 @@
 .flex {
-    display: flex;
-    background-color: coral;
+	display: flex;
 }
 
 .margin-center-horizontal {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
-.bg-img {
-    background-image: url(assets/img/bg-triangle.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: red;
-}
+// .bg-img {
+//     background: url(assets/img/bg-triangle.png) no-repeat center/cover fixed;
+// }

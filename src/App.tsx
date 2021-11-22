@@ -21,16 +21,28 @@ import '@ionic/react/css/display.css';
 import Login from './pages/login';
 import Awaiting from './pages/awaiting';
 import Dashboard from './pages/dashboard';
-import Game from './pages/game';
+import TabsRoot from './pages/tabs-root';
+import BoardTab from './pages/tab-board';
+import ResourcesTab from './pages/tab-resources';
+import RulesTab from './pages/tab-rules';
 
 const App: React.FC = () => ( 
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
+
+        {/* Classic path */}
         <Route exact path="/" component={Login}></Route>
         <Route exact path="/awaiting" component={Awaiting}></Route>
         <Route exact path="/dashboard" component={Dashboard}></Route>
-        <Route exact path="/game" component={Game}></Route>
+
+        {/* Path for game tabs and interface */}
+        <Route exact path="/game" component={TabsRoot}></Route>
+        
+        <Route exact path="/game/resources" component={ResourcesTab}></Route>
+        <Route exact path="/game/board" component={BoardTab}></Route>
+        <Route exact path="/game/Rules" component={RulesTab}></Route>
+
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
