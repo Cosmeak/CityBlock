@@ -21,10 +21,8 @@ import '@ionic/react/css/display.css';
 import Login from './pages/login';
 import Awaiting from './pages/awaiting';
 import Dashboard from './pages/dashboard';
-import TabsRoot from './pages/tabs-root';
-import BoardTab from './pages/tab-board';
-import ResourcesTab from './pages/tab-resources';
-import RulesTab from './pages/tab-rules';
+import TabsRoot from './pages/game/tabs-root';
+
 
 const App: React.FC = () => ( 
   <IonApp>
@@ -32,16 +30,15 @@ const App: React.FC = () => (
       <IonRouterOutlet>
 
         {/* Classic path */}
-        <Route exact path="/" component={Login}></Route>
-        <Route exact path="/awaiting" component={Awaiting}></Route>
-        <Route exact path="/dashboard" component={Dashboard}></Route>
+        <Route path="/login" component={Login} exact={true}></Route>
+        <Route path="/awaiting" component={Awaiting} exact={true}></Route>
+        <Route path="/dashboard" component={Dashboard} exact={true}></Route>
 
         {/* Path for game tabs and interface */}
-        <Route exact path="/game" component={TabsRoot}></Route>
-        
-        <Route exact path="/game/resources" component={ResourcesTab}></Route>
-        <Route exact path="/game/board" component={BoardTab}></Route>
-        <Route exact path="/game/Rules" component={RulesTab}></Route>
+        <Route path="/game" component={TabsRoot} exact={true}></Route>
+
+        {/* Error redirection / index */}
+        <Route path="/" render={() => <Redirect to="/login" />} exact={true}></Route>
 
       </IonRouterOutlet>
     </IonReactRouter>

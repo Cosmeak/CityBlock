@@ -1,9 +1,9 @@
-import { IonPage } from '@ionic/react';
+import { IonPage, IonTitle } from '@ionic/react';
 
 const BoardTab: React.FC = () => {
     return (
         <IonPage>
-
+            <IonTitle>Board</IonTitle>
         </IonPage>
     );
 };
